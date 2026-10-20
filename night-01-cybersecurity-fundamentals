@@ -1,0 +1,88 @@
+# Night 1: Cybersecurity Fundamentals
+
+## Overview
+This is my first cybersecurity study note. I learned the basics of networking, IP addresses, ports, TCP, UDP, DNS, and the CIA triad using Kali Linux.
+
+## 1. What Is Cybersecurity?
+Cybersecurity is the practice of protecting computers, networks, applications, and data from unauthorized access, attacks, damage, or theft.
+
+## 2. IP Addresses and Ports
+
+- **IP address:** Identifies a network interface so devices can communicate over a network.
+- **Port:** Identifies a communication endpoint associated with a service or application.
+- **TCP and UDP:** Transport protocols that carry data between applications.
+
+Think of an IP address as a building address and a port as a particular office inside that building.
+
+## 3. TCP vs. UDP
+
+### TCP
+- Provides reliable, ordered delivery of a byte stream.
+- Commonly used for HTTPS connections over TCP port 443 and SSH over TCP port 22.
+
+### UDP
+- Sends independent datagrams without guaranteeing delivery or ordering.
+- Used by many DNS queries and by QUIC, which supports HTTP/3.
+
+## 4. Common Ports
+
+| Port | Common service |
+|---|---|
+| 22/TCP | SSH |
+| 53 | DNS, commonly UDP and sometimes TCP |
+| 80/TCP | HTTP |
+| 443/TCP | HTTPS |
+
+Note: HTTP/3 uses QUIC over UDP, commonly on port 443.
+
+## 5. What Is DNS?
+DNS (Domain Name System) helps resolve domain names, such as `example.com`, to IP addresses so devices can locate servers.
+
+DNS does **not** guarantee that a website is safe.
+
+## 6. The CIA Triad
+
+- **Confidentiality:** Only authorized people can access information.
+- **Integrity:** Information remains accurate and is not changed without authorization.
+- **Availability:** Systems and information are accessible when needed.
+
+## 7. Kali Linux Practice
+
+Commands I practiced:
+
+```bash
+ip addr
+```
+Displays network interfaces and their IP addresses.
+
+```bash
+ip route
+```
+Displays the system's routing table.
+
+```bash
+ss -tuln
+```
+Shows listening TCP and UDP sockets, using numeric addresses and ports.
+
+## 8. What I Learned
+- The difference between an IP address and a port.
+- The basic differences between TCP and UDP.
+- Common networking ports and their services.
+- How DNS helps devices locate servers.
+- The CIA triad.
+- Basic network-inspection commands in Kali Linux.
+
+## 9. Quiz Result
+**Score: 9/10**
+
+I answered 9 out of 10 questions correctly. My revision topic is DNS: understanding that it resolves domain names to IP addresses.
+
+## 10. Ethical Practice
+I will perform security testing only on systems I own or have explicit permission to test, and I will respect the agreed scope.
+
+## Next Study Session
+**Night 2:** DNS, how web requests work, and beginner network analysis on my own machine or an authorized lab.
+
+---
+*Part of my cybersecurity learning journey.*
